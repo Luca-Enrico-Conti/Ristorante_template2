@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Cascina Rossino</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Cascina Rossino</h1>
+                <p class="tagline">Autenticità e Tradizione</p>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Hero -->
+    <section class="menu-hero">
+        <h1>Il Nostro Menu</h1>
+        <p>Scopri i piatti tipici della tradizione italiana</p>
+    </section>
+
+    <!-- Menu Filters -->
+    <section class="menu-filters">
+        <div class="container">
+            <h2 style="margin-bottom: 20px; color: var(--dark-color);">Filtra per categoria</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn" data-category="all">Tutti</button>
+                <button class="filter-btn" data-category="antipasti">Antipasti</button>
+                <button class="filter-btn" data-category="primo">Piatti Principali</button>
+                <button class="filter-btn" data-category="contorno">Contorni</button>
+                <button class="filter-btn" data-category="dolci">Dolci</button>
+                <button class="filter-btn" data-category="bevande">Bevande</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Items Grid -->
+    <section class="menu-grid">
+        <!-- Antipasti -->
+        <div class="menu-item" data-category="antipasti">
+            <div class="menu-image">🥰</div>
+            <div class="menu-content">
+                <h3>Tagliere Misto</h3>
+                <div class="price">€ 16,00</div>
+                <div class="description">Una selezione raffinata di formaggi, salumi e verdure marinate</div>
+                <div class="ingredients">Formaggi locali, prosciutto, mortadella, verdure di stagione</div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="antipasti">
+            <div class="menu-image">🥒</div>
+            <div class="menu-content">
+                <h3>Bruschetta al Pomodoro</h3>
+                <div class="price">€ 8,50</div>
+                <div class="description">Pane tostato con pomodori freschi, aglio e basilico</div>
+                <div class="ingredients">Pane casereccio, pomodori, basilico, aglio, olio d'oliva</div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="antipasti">
+            <div class="menu-image">🧁</div>
+            <div class="menu-content">
+                <h3>Supplì al Ragù</h3>
+                <div class="price">€ 6,00</div>
+                <div class="description">Riso fritto ripieno di ragù tradizionale, croccante e gustoso</div>
+                <div class="ingredients">Riso Carnaroli, ragù di carne, mozzarella, pangrattato</div>
+            </div>
+        </div>
+
+        <!-- Piatti Principali -->
+        <div class="menu-item" data-category="primo">
+            <div class="menu-image">🍝</div>
+            <div class="menu-content">
+                <h3>Pasta alla Carbonara</h3>
+                <div class="price">€ 14,00</div>
+                <div class="description">Ricetta tradizionale romana con guanciale, uovo e pecorino</div>
+                <div class="ingredients">Spaghetti biologici, guanciale, uova, pecorino romano</div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="primo">
+            <div class="menu-image">🍲</div>
+            <div class="menu-content">
+                <h3>Risotto ai Funghi Porcini</h3>
+                <div class="price">€ 15,50</div>
+                <div class="description">Riso Arborio cremoso con profumato fungo porcino</div>
+                <div class="ingredients">Riso Arborio, funghi porcini secchi, brodo vegetale, parmigiano</div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="primo">
+            <div class="menu-image">🥩</div>
+            <div class="menu-content">
+                <h3>Lasagna della Nonna</h3>
+                <div class="price">€ 13,00</div>
+                <div class="description">Tipica lasagna emiliana con ragù e béchamel autentica</div>
+                <div class="ingredients">Sfoglia all'uovo, ragù di manzo, béchamel, parmigiano</div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="primo">
+            <div class="menu-image">🦑</div>
+            <div class="menu-content">
+                <h3>Pappardelle al Cinghiale</h3>
+                <div class="price">€ 16,50</div>
+                <div class="description">Larghe tagliatelle con sugo di cinghiale selvatico</div>
+                <div class="ingredients">Pappardelle fatte in casa, cinghiale selvatico, pomodori, vino</div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="primo">
+            <div class="menu-image">🍤</div>
+            <div class="menu-content">
+                <h3>Spaghetti ai Frutti di Mare</h3>
+                <div class="price">€ 18,00</div>
+                <div class="description">Con vongole, cozze, calamari e gamberi freschi</div>
+                <div class="ingredients">Spaghetti, vongole, cozze, calamari, gamberi, vino bianco</div>
+            </div>
+        </div>
+
+        <!-- Contorni -->
+        <div class="menu-item" data-category="contorno">
+            <div class="menu-image">🥗</div>
+            <div class="menu-content">
+                <h3>Insalata Mista Stagionale</h3>
+                <div class="price">€ 7,00</div>
+                <div class="description">Verdure fresche di stagione con dressing fatto in casa</div>
+                <div class="ingredients">Lattuga, rucola, carote, pomodori, cetrioli, aceto balsamico</div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="contorno">
+            <div class="menu-image">🥔</div>
+            <div class="menu-content">
+                <h3>Patate al Forno</h3>
+                <div class="price">€ 5,50</div>
+                <div class="description">Patate locali croccanti al forno, condite con rosmarino</div>
+                <div class="ingredients">Patate novelle, rosmarino, olio d'oliva, sale</div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="contorno">
+            <div class="menu-image">🥦</div>
+            <div class="menu-content">
+                <h3>Broccoli Romaneschi</h3>
+                <div class="price">€ 6,50</div>
+                <div class="description">Broccoli freschi saltati in padella con aglio e olio</div>
+                <div class="ingredients">Broccoli romaneschi, aglio, olio d'oliva, peperoncino</div>
+            </div>
+        </div>
+
+        <!-- Dolci -->
+        <div class="menu-item" data-category="dolci">
+            <div class="menu-image">🍰</div>
+            <div class="menu-content">
+                <h3>Tiramisu</h3>
+                <div class="price">€ 7,50</div>
+                <div class="description">Il classico dolce italiano: cremoso, delizioso, irresistibile</div>
+                <div class="ingredients">Mascarpone, uova, caffè, cacao, biscotti Savoiardi</div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="dolci">
+            <div class="menu-image">🍮</div>
+            <div class="menu-content">
+                <h3>Panna Cotta ai Frutti di Bosco</h3>
+                <div class="price">€ 8,00</div>
+                <div class="description">Cremosa e leggera, con frutti di bosco freschi</div>
+                <div class="ingredients">Panna fresca, gelatin, frutti di bosco, zucchero</div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="dolci">
+            <div class="menu-image">🍪</div>
+            <div class="menu-content">
+                <h3>Panettone Artigianale</h3>
+                <div class="price">€ 9,00</div>
+                <div class="description">Ricetta tradizionale a lievitazione naturale con uvetta e canditi</div>
+                <div class="ingredients">Farina, burro, uova, uvetta, canditi, lievito madre</div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="dolci">
+            <div class="menu-image">🍰</div>
+            <div class="menu-content">
+                <h3>Zabajone Classico</h3>
+                <div class="price">€ 6,50</div>
+                <div class="description">Cremoso dolce a base di uova e Marsala, servito caldo</div>
+                <div class="ingredients">Uova, Marsala, zucchero, cacao, biscotti</div>
+            </div>
+        </div>
+
+        <!-- Bevande -->
+        <div class="menu-item" data-category="bevande">
+            <div class="menu-image">🍷</div>
+            <div class="menu-content">
+                <h3>Vini Regionali</h3>
+                <div class="price">€ 6,00 - €25,00</div>
+                <div class="description">Selezione di vini locali e nazionali di qualità</div>
+                <div class="ingredients">Vari Barolo, Chianti, Moscato, Barbera</div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="bevande">
+            <div class="menu-image">☕</div>
+            <div class="menu-content">
+                <h3>Caffè Espresso</h3>
+                <div class="price">€ 1,50</div>
+                <div class="description">Caffè espresso italiano, lungo o ristretto</div>
+                <div class="ingredients">Caffè arabica tostato artigianalmente</div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="bevande">
+            <div class="menu-image">🍶</div>
+            <div class="menu-content">
+                <h3>Acqua Minerale</h3>
+                <div class="price">€ 2,00</div>
+                <div class="description">Acqua naturale o frizzante di qualità</div>
+                <div class="ingredients">Acqua minerale</div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="bevande">
+            <div class="menu-image">🥃</div>
+            <div class="menu-content">
+                <h3>Limoncello Fatto in Casa</h3>
+                <div class="price">€ 4,00</div>
+                <div class="description">Digestivo tradizionale preparato artigianalmente</div>
+                <div class="ingredients">Limoni, alcool, zucchero, acqua</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Pronto a Prenotare?</h2>
+            <p>Contattaci per una prenotazione al nostro ristorante</p>
+            <a href="contatti.html" class="cta-button-secondary">Prenota Ora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Cascina Rossino</h4>
+                <p>Autenticità e Tradizione</p>
+            </div>
+            <div class="footer-section">
+                <h4>Orari</h4>
+                <p>Lunedì - Giovedì: 12:00 - 14:30, 19:00 - 22:30</p>
+                <p>Venerdì - Domenica: 12:00 - 14:30, 19:00 - 23:00</p>
+            </div>
+            <div class="footer-section">
+                <h4>Seguici</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cascina Rossino. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
